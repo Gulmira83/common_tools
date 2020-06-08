@@ -10,7 +10,7 @@ variable "deployment_environment" {
 variable "prometheus" {
 type = "map"
 default = { 
-  prometheus_ip_ranges = "10.16.0.27/8, 50.194.68.229/32, 24.13.55.122/32"
+  prometheus_ip_ranges = "10.16.0.27/8, 50.194.68.229/32"
 }
 }
 variable "nexus" {
