@@ -100,6 +100,7 @@ alertmanager:
     annotations:
       kubernetes.io/ingress.class: nginx
       cert-manager.io/cluster-issuer: letsencrypt-prod
+      nginx.ingress.kubernetes.io/whitelist-source-range: ${prometheus_ip_ranges}
     #   kubernetes.io/tls-acme: 'true'
 
     ## alertmanager Ingress additional labels
