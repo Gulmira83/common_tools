@@ -7,5 +7,7 @@ module "prometheus_deploy" {
   
   template_custom_vars    = {
     null_depends_on       = "${null_resource.cert_manager.id}"
+    prometheus_ip_ranges          =  "${var.prometheus["prometheus_ip_ranges"]}"
+  
   }
 }
