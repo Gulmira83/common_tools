@@ -42,6 +42,10 @@ Master:
   #   - name: GIT_TOKEN
   #     value: ${git_token}
   ContainerEnv:
+
+    - name: DOMAIN_NAME
+      value: ${google_domain_name}
+
     - name: GIT_TOKEN
       value: ${git_token}
 
