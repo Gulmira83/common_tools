@@ -13,6 +13,7 @@ module "jenkins_deploy" {
     jenkins_auth_secret    = "${var.jenkins["jenkins_auth_secret"]}"
     jenkins_auth_client_id = "${var.jenkins["jenkins_auth_client_id"]}"
     jenkins_pvc            = "${kubernetes_persistent_volume_claim.fuchicorp_pv_claim.metadata.0.name}"
+    google_domain_name     = "${var.google_domain_name}"
     git_token              = "${var.jenkins["git_token"]}"
   }
 }
