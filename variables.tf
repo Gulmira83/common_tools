@@ -112,6 +112,6 @@ variable "namespaces" {
 }
 
 variable "show_passwords" {
-  default = "true"
+  default = "false"
   description = "- (Optional) if you put <true> output will show password."
 }
