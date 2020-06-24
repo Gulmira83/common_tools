@@ -105,12 +105,13 @@ variable "namespaces" {
     "dev",
     "qa",
     "prod",
-    "test"
+    "test",
+    "stage"
   ]
   description = "- (Required) list of all namespaces for fuchicorp cluster"
 }
 
 variable "show_passwords" {
-  default = "false"
+  default = "true"
   description = "- (Optional) if you put <true> output will show password."
 }
