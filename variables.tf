@@ -107,6 +107,7 @@ variable "namespaces" {
     "prod",
     "test",
     "stage"
+    "elk"
   ]
   description = "- (Required) list of all namespaces for fuchicorp cluster"
 }
